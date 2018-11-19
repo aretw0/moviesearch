@@ -1,5 +1,5 @@
 var url = 'https://leandrojsa.github.io/'
-var url1 = 'https://www.googleapis.com/youtube/v3/search?part=id&key=AIzaSyDC215lVF5o5B_IB5PJSatAVPlPIt_ggUU&maxResults=1&type=video&q=trailer+'
+var url1 = 'https://www.googleapis.com/youtube/v3/search?part=id&key={api_KEY}&maxResults=1&type=video&q=trailer+'
 var lastTime;
 var xhttp1 = new XMLHttpRequest();
 var xhttp2 = new XMLHttpRequest();
