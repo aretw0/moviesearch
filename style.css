@@ -1,0 +1,32 @@
+header {
+    background-color: blueviolet;
+    text-align: center;
+}
+
+body {
+    background: #f06d06;
+}
+
+#search-panel {
+    background: white;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.center {
+    margin: 0 auto;
+    width: 200px;
+    background: black;
+    padding: 20px;
+    color: white;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+  }
+
+#img-movie {
+    width: 200px;
+    height: auto;
+}

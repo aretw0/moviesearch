@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sugestão de Filmes</title>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+	</head>
+	<body>
+        <header class="header">
+            <h2>Indicação de filme</h2>
+            <p>Trago um filme em menos de <span id="sec-req">30</span> segundos</p>
+            <h4 id="load-mess" style='display: none;'>Carregando...</h4>
+        </header>
+        <form class="center" id="form-movie" name="form-movie" onsubmit="loadSearch(event,this)">
+            <p>Atores:</p>
+            <input type="search" style="width: 100%;" name="actor" id="search-actor">
+            <p>Separe o nome dos atores por vírgula</p> 
+            <p>Ano:</p>
+            <input type="search" style="width: 100%;" name="year" id="search-year">
+            <p>Categoria:</p>
+            <select name="category">
+                    <option value="" selected>Selecione</option>
+                    <option value="Ação">Ação</option>
+                    <option value="Ficção">Ficção</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Musical">Musical</option>
+                    <option value="Documentário">Documentário</option>
+                    <option value="Épico">Épico</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Suspense">Suspense</option>
+                    <option value="Faroeste">Faroeste</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Policial">Policial</option>
+                    <option value="Guerra">Guerra</option>
+                    <option value="Clássico">Clássico</option>
+                    <option value="Animação">Animação</option>
+                    <option value="Infantil">Infantil</option>
+            </select>
+            <p>Outras informações:</p>
+            <input type="search" style="width: 100%;" name="options" id="search-opts">
+            <hr> 
+            <input type="submit" style="width: 100%;" value="Indica">
+        </form>
+        <section id="resbox" style="display: none;">
+            <div style="text-align: center;">
+                <a href="#" onclick="remix()">Outro filme parecido?</a>
+                <span style="margin: 80px"></span>
+                <a href="#" onclick="research()">Outra pesquisa?</a>
+            </div>
+            <div id='infomovie'>
+                <h3 id="m-title"></h3>
+                <div class="flex-center">
+                    <div>
+                        <img style="display: none;" id="img-movie" alt="Resultado" src="">
+                        <div id="vidbox" style="display: none;">
+                            <p>Trailer:</p>
+                            <iframe id="vid-frame"  width="420" height="315"
+                                src="">
+                            </iframe> 
+                        </div>
+                    </div>
+                    <span style="margin: 20px"></span>
+                    <div>
+                        <p id='m-year'></p>
+                        <p id='m-categ'></p>
+                        <p id='m-sinops'></p>
+                        <p id='m-actors'></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="storage" style="display:none;"></div>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="script.js"></script>
+	</body>
+</html>
